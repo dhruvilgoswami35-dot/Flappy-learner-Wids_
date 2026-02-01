@@ -1,5 +1,5 @@
-**Autonomous Game Playing Agent  
-using Deep Reinforcement Learning**
+\. **Autonomous Game Playing Agent  
+\. using Deep Reinforcement Learning**
 
 WiDS Mentorship Program Final Report
 
