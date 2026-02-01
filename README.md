@@ -4,7 +4,7 @@ using Deep Reinforcement Learning**
 WiDS Mentorship Program Final Report
 
 **Submitted By:  
-**\[Your Name\]  
+Goswami Dhruvilgiri , 25B0712
 <br/>**Institution:  
 **Indian Institute of Technology (IIT) Bombay  
 <br/>**Date:  
