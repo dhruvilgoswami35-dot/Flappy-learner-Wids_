@@ -4,7 +4,7 @@ import numpy as np
 
 SCREEN_WIDTH = 400
 SCREEN_HEIGHT = 600
-PIPE_GAP = 200  # HUGE GAP
+PIPE_GAP = 200 
 PIPE_FREQUENCY = 1500
 
 class FlappyBirdEnv:
@@ -18,8 +18,8 @@ class FlappyBirdEnv:
     def reset(self):
         self.bird_y = SCREEN_HEIGHT // 2
         self.bird_velocity = 0
-        self.gravity = 0.25  # MOON GRAVITY (Very slow falling)
-        self.jump_strength = -5 # Gentle jump
+        self.gravity = 0.45
+        self.jump_strength = -5 
         
         self.pipes = []
         self.score = 0
@@ -52,10 +52,6 @@ class FlappyBirdEnv:
         self.game_over = False
         reward = 0.1
         
-        # --- THE TEACHER REWARD ---
-        # We hold the AI's hand. 
-        # If it is below the gap, Reward for Jumping.
-        # If it is above the gap, Reward for Waiting.
         target_pipe = None
         for pipe in self.pipes:
             if pipe["x"] + 50 > 50:
@@ -127,4 +123,5 @@ class FlappyBirdEnv:
             pygame.draw.rect(self.screen, (0, 255, 0), (pipe["x"], pipe["height"] + PIPE_GAP, 50, SCREEN_HEIGHT))
         score = self.font.render(f"Score: {self.score}", True, (255, 255, 255))
         self.screen.blit(score, (10, 10))
+
         pygame.display.flip()
