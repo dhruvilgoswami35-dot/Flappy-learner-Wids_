@@ -1,6 +1,7 @@
 # WiDS Mentorship Program - Final Project Submission
 
 **Student Name:** Goswami Dhruvilgiri 
+
 **College:** IIT Bombay  
 **Domain:** Artificial Intelligence / Reinforcement Learning  
 **Project:** Autonomous Flappy Bird Agent using Deep Q-Learning (DQN)
